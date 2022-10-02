@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
+  resources :articles
+  # resources :articles, only: [:show, :index, :new, :create, :edit, :update]
 end
+
+# resources : it helps in getting all routes associated to articles contoller without coding explicitly
